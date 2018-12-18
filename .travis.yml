@@ -23,6 +23,7 @@ windows: &windows
    os: windows
    language: cpp
    install:
+     - choco install pip
      - pip install conan conan_package_tools
    script:
      - python build.py
