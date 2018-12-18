@@ -21,7 +21,7 @@ osx: &osx
 
 windows: &windows
    os: windows
-   language: python
+   language: cpp
    install:
      - pip install conan conan_package_tools
    script:
