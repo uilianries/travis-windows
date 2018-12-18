@@ -25,7 +25,7 @@ windows: &windows
    os: windows
    language: cpp
    install:
-     - choco install -y python '"/InstallDir:C:\tools\python3"'
+     - choco install -y python '"/InstallDir:C:\\tools\\python3"'
      - choco install -y pip
      - pip install conan conan_package_tools
    script:
