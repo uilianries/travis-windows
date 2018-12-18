@@ -5,6 +5,8 @@ env:
      - CONAN_USERNAME: "user"
      - CONAN_LOGIN_USERNAME: "user"
      - CONAN_CHANNEL: "channel"
+     - PYTHONIOENCODING: "UTF-8"
+     - PATH: "%PATH%;C:/tools/python3"
 
 linux: &linux
    os: linux
@@ -23,7 +25,7 @@ windows: &windows
    os: windows
    language: cpp
    install:
-     - choco install -y python
+     - choco install -y python '"/InstallDir:C:\tools\python3"'
      - choco install -y pip
      - pip install conan conan_package_tools
    script:
